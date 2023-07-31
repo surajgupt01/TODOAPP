@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    
+background-color: #141313;
+
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    background-color: #000000;
+    color: white;
+
+}
+
+h1{
+    font-size: 2vw;
+}
+
+ i{
+    font-size: 2vw;
+    display: none;
+
+ }
+
+
+.nav{
+    margin-left: 100px;
+    margin-top: 20px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: #616060;
+    border: 1 px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column; 
+    align-items: center;
+}
+.pic img{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    margin-top: 10px;
+
+    
+}
+
+
+.head{
+    margin: 20px;
+
+}
+
+.container{
+    width: 720px;
+    height: 400px;
+    background-color: rgb(45, 45, 45);
+    position: relative;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    margin-left: 340px;
+    margin-top: 20px;
+    border: 1px solid rgb(36, 36, 36);
+    
+    
+
+
+}
+
+#btn{
+    background-color: #2c92ff;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #2c92ff;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #166fcf;
+
+}
+
+#task{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    margin-left: 50px;
+    margin-bottom: 10px;
+
+
+}
+
+.time{
+    width: 75px;
+    height: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid rgb(70, 66, 66);
+    border-radius: 5px;
+
+}
+
+.container li:hover{
+    /* background-color: #a1a1a1; */
+    height: 20px;
+    width: 700px;
+    border-bottom: 0.05px solid rgb(182, 182, 182);
+    border-top: 0.05px solid rgb(192, 191, 191);
+    cursor: pointer;
+
+
+}
+
+.settings li{
+
+    list-style: none;
+    text-decoration: none;
+    margin-top: 3px;
+    cursor: pointer;
+
+    
+
+
+}
+
+/* .settings li:hover{
+
+    color: #f5eff6;
+} */
+
+
+
+.list{
+
+position: absolute;
+overflow: auto;
+overflow-x: hidden;
+height: 300px;
+width: 680px;
+
+margin-top: 80px;
+margin-left: 30px;
+list-style-type:  none;
+
+}
+
+.list::-webkit-scrollbar{
+    width: 5px;
+    background-color: #707070;
+}
+
+.cross{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ec2b2b;
+    margin-left: 600px;
+    border: none;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#clr{
+
+    background-color: #dd2730;
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin-left: 42%;
+    margin-top: 10px;
+
+}
+
+#clr:hover{
+    background-color: #c12449;
+
+}
+
+
+
+#bin{
+    
+
+    margin-top: 12px;
+    position: absolute;
+margin-left: -55px;
+
+    width: 35px;
+    height: 35px;
+
+}
+
+.Notes{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(24, 23, 23, 0.823);
+    background-color: #161b24;
+    border-radius: 10px;
+    margin-left: 1150px;
+    margin-top: 20px;
+    color: white;
+    
+    
+    
+
+}
+
+.Notes p{
+    margin-top: 120px;
+    margin-left: 40px;
+    position: absolute;
+    font-size: 15px;
+    
+}
+
+.Quotes p{
+    background-color: #df6af4;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-left: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+#NOTE{
+    width: 80%;
+    height: 100px;
+    margin-left: 1.1vw;
+    /* position: absolute; */
+    resize: none;
+    margin-top: 150px;
+    padding: 10px;
+    
+
+}
+
+
+
+.sign{
+    display: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(5, 5, 5);
+}
+
+
+@media(max-width:600px){
+
+
+
+.nav1{
+    background-color: #090909;
+    color: white;
+    border: none;
+}
+    h1{
+        font-size: 5vw;
+    }
+
+    .logo img{
+
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+    
+    }
+
+    .nav{
+        display: none;
+        margin-left: -100%;
+
+    }
+
+    .Notes{
+        display: none;
+        margin-left: -100%;
+
+
+    }
+
+    .ham{
+        display: none;
+        margin-left: -100%;
+    }
+
+    i{
+        display: block;
+        font-size: 6vw;
+    }
+
+    .container{
+        width: 80%;
+        margin-left: 2.5vw;
+        
+    }
+
+    .list{
+        width: 80%;
+        margin-left: .5vw;
+    }
+
+ .container li:hover{
+        width: 70vw;
+    }
+    #task{
+        margin-left: 0.5vw;
+        width: 70vw;
+    }
+
+    .cross{
+        margin-left: 85%;
+        width: 4vw;
+        height: 4vw;
+        text-align: center;
+    }
+
+    .time{
+    
+        height: 4vw;
+        text-align: center;
+        
+
+        font-size: 2vw; 
+    }
+
+    #clr{
+        width: 35vw;
+        margin-left: 30%;
+    }
+
+    li{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
+.mobile{
+    width: 100%;
+    height: 100%;
+     border-right: 1 px solid rgb(255, 255, 255);
+    background-color: #212020;
+    transition: all 0.5s ease-in-out ;
+
+}
+
+
+
+.mobile .container{
+    opacity: 9%;
+}
+
+
+.mobile #clr{
+    opacity: 9%;
+}
+
+.mobile .sign{
+    display: block;
+    margin-top: 42vw;
+    margin-left: 32%;
+    z-index: 9999;
+    
+}
+
+
+
+
+.mobile .nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  margin-left: 10%;
+   z-index: 9999;
+    margin-top: 10%;
+    height: 180px;
+    width: 75%;
+    color: white;
+    padding: 5vw;
+    transition: all 0.7s ease-in-out;
+    background-color: #000000;
+}
+
+.mobile .pic img{
+    display: inline-block;
+    height: 25vw;
+    width: 25vw;
+
+}
+
+
+.mobile .name{
+    display: inline-block;
+    margin-left: 5vw;
+
+    margin-top: 20px;
+    z-index: 999;
+}
+
+.mobile .Notes{
+
+
+    display: block;
+    margin-left: 10%;
+    background-color: #000000;
+    margin-top: 70%;
+    transition: all 0.7s ease-in-out;
+    z-index: 999;
+    width: 75%;
+}
+
+.mobile #NOTE{
+
+    margin-left: 4.4vw;
+}
+
+.mobile .settings li{
+    margin-top: 4vw;
+}
+
+
+
+
